@@ -1,0 +1,578 @@
+/***************** 
+* Owner : Aesha Deveshkumar Dave
+* Date  : Nov 22 (v2)
+* From  : https://www.w3schools.com/css/css_selectors.asp
+******************/
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+    line-height:1.5;
+    overflow-x: hidden;
+}
+body {
+    margin:0;
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+    line-height:1.5
+}
+h1 {
+    font-size:36px
+}
+h2 {
+    font-size:30px
+}
+h3 {
+    font-size:24px
+}
+h4 {
+    font-size:20px
+}
+h5 {
+    font-size:18px
+}
+h6 {
+    font-size:16px
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family:"Segoe UI",Arial,sans-serif;
+    font-weight:400;
+    margin:10px 0
+}
+/*End Owner: Aesha Deveshkumar Dave*/
+
+/***************** 
+* Owner : prashant Balachandar (first grid)
+* Date  : Nov 24 (v2)
+* From  : https://www.w3schools.com/w3css/w3css_containers.asp
+******************/
+.gridcontent {
+    text-align: left;
+    flex: 100%;
+}
+.propic {
+    right: 600px;
+}
+.propic1 {
+    left: 150px;
+    flex: 0%;
+    padding-right: 1%;
+}
+.bghead {
+    text-align: center;
+    background-color:#f1f1f1!important;
+    padding-bottom: 7px;
+}
+.bgimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    width: 40%;
+}
+/* End Owner: Prashant Balachandar */
+
+/***************** 
+* Owner : Angel Wandum
+* Date  : Nov 23 (v2)
+* From  : https://www.w3schools.com/w3css/w3css_containers.asp
+******************/
+.imghead {
+    padding:0.01em 16px
+}
+.grid {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 16px;
+    display: flex;
+}
+.grid2 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 16px;
+    color:#000!important;
+    background-color:#f1f1f1!important;
+    display: flex;
+}
+.textcolor{
+    color:#757575!important
+}
+.profilepic {
+    left: 150px;
+    flex: 0%;
+    padding-right: 1%;
+}
+/* End Owner: Angel Wandum */
+
+/***************** 
+* Owner : Jenish Shaleenkumar Shah
+* Date  : Nov 22 (v3)
+* From  : https://www.w3schools.com/html/html_images.asp
+******************/
+
+@media screen and (max-width:600px) {
+    .maingrid1, .maingrid2, .maincontent1, .maincontent2, .gridcontent {
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    } 
+        
+}
+.position {
+    flex:40%;
+    padding-left:10%;
+    line-height: 20px;
+    background-color:#333
+}
+@media screen and (max-width: 600px) {
+    .position {
+        padding-left:28%;
+    }
+}
+.image {
+    margin-top: 35px;
+    padding-left:10px;
+    padding-right: 10px;
+    width:2em;
+    height:2em;
+    float:left;
+    background-color:#333;
+}
+/* End Owner: Jenish Shaleenkumar Shah */
+
+/***************** 
+* Owner : Angel Wandum
+* Date  : Nov 22 (v3)
+* From  : https://www.w3schools.com/html/html5_semantic_elements.asp
+******************/
+.Disclaimer {
+    color: white;
+    flex:60%;
+    font-size: 15px;
+    background-color: #333;
+    text-align: center;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(3, 3, 3);
+}
+@media (max-width: 600px) {footer {flex-direction:column;
+}}
+p {
+    margin-bottom: 10px;    
+}
+/* End Owner: Angel Wandum */
+
+/***************** 
+* Owner : Xin Wen
+* Date  : Dec 06 (v3)
+* From  : https://www.w3schools.com/css/css_navbar_horizontal.asp
+******************/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+  }
+  
+.padd {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px !important;
+    text-decoration: none;
+  } 
+  .paddd{
+      padding:0 !important; 
+      text-align: center !important;
+  }
+  ul.topnav li b {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  ul.topnav li a:hover:not(.active) {background-color: #111;}
+  
+  ul.topnav li a.active {background-color: #111;}
+  
+  ul.topnav li.right {float: right;}
+  
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right, ul.topnav, .pad,
+    ul.topnav li {float: none;}
+  }
+
+.dropdown {
+    display: inline-block; 
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.home {
+    position: absolute;
+}
+
+.sv {
+    display: block;
+    filter: blur(4px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    width: 100%;
+}
+/* End Owner: Xin wen */
+
+/***************** 
+* Owner : Aesha Deveshkumar Dave
+* Date  : Nov 24 (v2)
+* From  : https://www.logologo.com/
+******************/
+.logo {
+    float : left;
+    width : auto;
+    padding-left:5px;
+    padding-top:5.5px;
+    flex: 30%;
+}
+/* End Owner: Aesha Deveshkumar Dave */
+
+/***************** 
+* Owner : Angel Wandum
+* Date  : Dec 7 (v3)
+* From  : https://www.w3schools.com/css/default.asp
+******************/
+.main_srv {
+    text-align: center;
+}
+.service {
+    width: 80%;
+    border: 1px solid black;
+    margin: 20px auto;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+.service_title {
+    font-weight: 700;
+    text-decoration: underline;
+}
+.service_desc{
+    margin: 15px;
+}
+.service_more {
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: skyblue;
+    
+}
+.service_description {
+    width: 65%;
+    margin: auto;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.srv_header{
+    position: relative;
+    
+}
+.service_header{
+    position: absolute;
+    font-size: 50pt;
+    color: black;
+    text-align: center;
+    padding: 75px;
+    font-weight: 800;
+    z-index: 999;
+}
+.srv_header > img{
+    width: 100%;
+    height: 50em;
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
+  padding-top: 20px;
+}
+.mapouter{
+    position:relative;
+    height:500px;
+    width:100%;
+    
+}
+.gmap_canvas {
+    
+    background:none!important;
+    height:500px;
+    width:100%;
+}
+.gmap_canvas > iframe{
+    width: 100%;
+}
+.cartographic_intro {
+    font-weight: bold;
+    font-size: 15px; ;
+}
+.cartographic_body{
+    font-weight: bold;
+    font-size: 30px;
+}
+.serv_cart{
+    font-weight: bold;
+}
+.frame {
+    border: 0px;
+}
+/*End Owner: Angel Wandum*/
+/***************** 
+* Owner : Jenish
+* Date  : Dec 7 (v3)
+* From  : https://www.w3schools.com/html/html5_semantic_elements.asp
+******************/
+.careerimg {
+    width: 100%;
+    height: 50em;
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+    padding-top: 5px;
+}
+.careerhead {
+    position: absolute;
+    font-size: 50pt;
+    color: black;
+    text-align: center;
+    padding:5%;
+    font-weight: 800;
+    z-index: 999;
+}
+.buttonarea {
+    background-color: #000;
+    max-width: 100%;
+    opacity: 0.80;
+    display: flex;
+}
+.careerbtn{
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 45%;
+    cursor: pointer;
+    flex: 45%;
+    transition-duration: 0.35s;
+}
+.careerbtn:active {
+    background-color: dodgerblue;
+    transform: translateY(4px);
+}
+.careerbtn:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+@media screen and (max-width:600px) {
+    .careerbtn {
+        margin-left: 36%;
+    }
+}
+#crrform{
+    display:none;
+    width: 100%;
+    text-align:left;
+    margin-top: 20px; 
+    padding-left: 10%;
+}
+.formpad {
+    padding-top:64px!important;
+    padding-bottom:64px!important;
+}
+select {
+    width: inherit;
+    padding: 16px 20px;
+    border: 1px #333;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+/*End Owner: Jenish Shaleenkumar Shah*/
+
+/***************** 
+* Owner : Xin Wen
+* Date  : Dec 7 (v3)
+* From  : https://www.w3schools.com/html/html5_semantic_elements.asp
+******************/
+.remote-64 {
+    padding-top:64px!important;
+    padding-bottom:64px!important
+}
+.remotecontainer:after, .remotecontainer:before{
+    content:"";
+    display:table;
+    clear:both
+}
+.subcontent {
+    margin-left:auto;
+    margin-right:auto;
+    max-width:980px;
+    text-align: left
+}
+.remotep32 {
+    padding-top:16px!important;
+    padding-bottom:16px!important
+}
+.remotetext{
+    color:#757575!important
+}
+.remote-grey{
+    color:#000!important;
+    background-color:#f1f1f1!important
+}
+/*End Owner: Xin Wen*/
+
+/***************** 
+* Owner : Prashant Balachandar
+* Date  : Dec 7 
+* From  : https://www.w3schools.com/html/html_classes.asp
+******************/
+.mainhead{
+    padding:0.01em 16px;
+    color:#000!important;
+    background-color:#f1f1f1!important;
+    text-align:center!important;
+}
+
+.maingrid1 {
+    padding-top:64px!important;
+    padding-bottom:64px!important;
+}
+.maincontent1 {
+    max-width:980px;
+    text-align: left;
+    margin-left:auto;
+    margin-right:auto
+}
+.mainpadding1 {
+    padding-top:16px!important;
+    padding-bottom:16px!important
+}
+.gridtextgrey {
+    color:#757575!important
+}
+/*End Owner: Prashant Balachandar*/
+/***************** 
+* Owner : Jenish Shaleenkumar Shah
+* Date  : Dec 7 
+* From  : https://www.w3schools.com/html/html_classes.asp
+******************/
+.maingrid2 {
+    padding-top:64px!important;
+    padding-bottom:64px!important;
+    background-color:#f1f1f1!important
+}
+.maingrid2:after, .maingrid2:before {
+    content:"";
+    display:table;
+    clear:both
+}
+.maincontent2 {
+    margin-left:auto;
+    margin-right:auto;
+    max-width:980px;
+    text-align: left;
+}
+.mainpadding2 {
+    padding-top:16px!important;
+    padding-bottom:16px!important;
+}
+/*End Owner: Jenish Shaleenkumar Shah*/
+/***************** 
+* Owner : Prashant Balachandar
+* Date  : Dec 7 
+* From  : https://www.w3schools.com/html/html_classes.asp
+******************/
+.facts {
+    color:#fff!important;
+    background-color:#000!important;
+    text-align:center!important;
+    display:block!important;
+    width:auto!important;
+    opacity:0.60;
+    padding-top:64px!important;
+    padding-bottom:64px!important;
+}
+.factext {
+    margin:16px!important;
+    font-size:24px !important ;
+}
+/*End Owner: Prashant Balachandar*/
+/***************** 
+* Owner : Aesha Deveshkumar Dave
+* Date  : Dec 7 (v3)
+* From  : https://www.w3schools.com/css/css3_buttons.asp
+******************/
+.SubmitButton{
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 30%;
+    cursor: pointer;
+    flex: 45%;
+    transition-duration: 0.35s;
+}
+
+input[type=text], input[type=tel], input[type=textarea] select, input[type=email] {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+#contactform {
+    padding-left: 20% !important;
+}
+/*End Owner: Aesha Deveshkumar Dave*/
